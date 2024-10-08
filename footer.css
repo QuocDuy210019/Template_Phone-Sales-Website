@@ -1,0 +1,32 @@
+/* cuối */
+.footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+/* Lưới của ô div căn chỉnh ô div bọc nội dung */
+.grid-footer-start {
+  display: flex;
+  justify-content: center;
+}
+
+/* ô bọc nội dung */
+.footer-start {
+  width: 1160px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-start div p, .footer-start div ul{
+  text-align: start;
+}
+
+.start-style a{
+  text-decoration: none;
+  color:darkgoldenrod
+}
+
+.footer-start-list-1 a, .footer-start-list-2 a {
+  color: black;
+}

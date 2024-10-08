@@ -1,0 +1,110 @@
+/* Đặt lại chiều rộng của bootstrap "container" */
+.container-max-carousel, .container-max-product-grid {
+  max-width: 1200px;
+}
+/* Hình của carousel slide */
+.carousel-setting img{
+  max-height: 380px;
+  object-fit: contain; /* Hình ảnh được thay đổi kích thước để vừa trong ô chứa */
+}
+
+/* Hình QC */
+.qc-samsung {
+  margin-bottom: 10px;
+  max-width: 1200px;
+}
+.qc-samsung img{
+  margin: 6px;
+  max-width: 1160px; /* Đảm bảo hình ảnh không vượt quá kích thước của ô chứa */
+  object-fit: contain; /* Hình ảnh được thay đổi kích thước để vừa trong ô chứa */
+}
+
+/* Khung chứa sản phẩm */
+.product-grid {
+  display: flex;
+  max-width: 1180px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+/* Sản phẩm */
+.product{
+  display:inline-block;
+  border-radius: 10px; /*bo viền*/
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin: 8px 6px;
+  width: 222px;
+  height: 425px;
+  background-color: white;
+}
+/* Hình sản phẩm */
+.product img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain; /*đặc kiểu xử lý hình ảnh*/
+  transition: transform 0.3s ease; 
+}
+/* Tên SP */
+.product h3{
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+.product h3 a{
+  text-decoration: none;
+  color: black;
+}
+/* Giá niêm yết SP */
+.product del {
+  font-size: 13px;
+}
+/* Giá bán hiện tại SP */
+.product-price {
+  color: red;
+  font-size: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+/* Nút MUA SP */
+.product-buy {
+  font-size: 10x;
+  width: 202px;
+  border-radius: 5px;
+  border: none;
+  background: orange;
+  margin-bottom: 13px;
+}
+
+.product-buy a {
+  text-decoration: none;
+  color: white;
+}
+
+/* footer của SP */
+.product-footer {
+  clear: both;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  background: #f3f4f6;
+  font-size: 12px;
+  padding: 2px 5px;
+  margin: 0 0 5px;
+  display: block;
+}
+
+/* Hiệu ứng khi người dùng di chuột qua */
+.product:hover {
+  box-shadow: 0 0 10px rgb(214, 6, 6);
+  border: 1px solid rgb(214, 6, 6);
+}
+
+.product:hover img {
+  transform: translateY(-8px);
+}
+
+.product-buy:hover {
+  box-shadow: 0 0 10px rgb(214, 6, 6);
+  border: 1px solid rgb(214, 6, 6);
+}
+

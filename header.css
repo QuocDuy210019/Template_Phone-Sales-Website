@@ -1,0 +1,72 @@
+/* Khung chứa thanh điều hướng chính và menu dropdown */
+.header {
+    display: flex;
+    background-color: #cf0c0d;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*Thanh điều hướng chính*/
+.header-navbar {
+    height: 70px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+/* Logo trên thanh điều hướng */
+.a-logo img{
+    max-width: 100px; /* Đảm bảo hình ảnh không vượt quá kích thước của ô chứa */
+    object-fit: contain; /* Hình ảnh được thay đổi kích thước để vừa trong ô chứa */
+}
+/* Form của thanh tìm kiếm */
+.search-bar {
+    display: flex;  /* Kích hoạt flexbox cho phần tử chứa */
+    margin-left: 150px; 
+    align-items: center; /*Căn phần tử theo chiều dọc flexbox*/
+    width: 500px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 8px;
+}
+/* Ô tìm kiếm */
+.search-bar input[type="text"] {
+    height: 30px;
+    flex-grow: 1; /*mở rộng và chiếm hết khoảng trống còn lại trên trục chính của form*/
+    border: none;
+    outline: none;
+  
+}
+/* nút "search" */
+.search-bar button {
+    font-size: 15px;
+    height: 30px;
+    background-color: white;
+    color: red;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer; /*trỏ chuột thành bàn tay khi di chuột vào phần tử có thuộc tính này*/
+}
+
+/* Menu dropdown */
+.header-dropdown {
+    margin-top: 20px;
+    width: 1100px;
+    display: flex;
+    justify-content: space-around;
+}
+/* Tên của dropdown */
+.header-dropdown strong {
+    font-size: 15px;
+    font-weight: 400;
+}
+/* Nội dung bên trong dropdown */
+.header-dropdown-info {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
